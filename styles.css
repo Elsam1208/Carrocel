@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto como Arial, ou sans-serif se Arial não estiver disponível */
+}
+
+.carousel {
+    position: relative; /* Define a posição relativa do carrossel, permitindo a colocação de elementos posicionados dentro dele */
+    width: 80%; /* Define a largura do carrossel como 80% da largura do contêiner pai */
+    margin: auto; /* Centraliza o carrossel horizontalmente dentro do contêiner pai */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites do carrossel */
+}
+
+.carousel-images {
+    display: flex; /* Alinha as imagens em linha (horizontalmente) dentro do carrossel */
+    transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave ao movimento de deslocamento das imagens */
+}
+
+.carousel-images img {
+    width: 100%; /* Define que cada imagem ocupará 100% da largura do carrossel */
+    flex: 0 0 100%; /* Garante que cada imagem ocupe 100% da largura do carrossel e não encolha */
+}
+
+button {
+    position: absolute; /* Posiciona os botões de controle de forma absoluta dentro do carrossel */
+    top: 50%; /* Alinha verticalmente os botões ao centro do carrossel */
+    transform: translateY(-50%); /* Ajusta o posicionamento dos botões para que fiquem centralizados verticalmente */
+    background-color: rgba(0, 0, 0, 0.5); /* Define uma cor de fundo preta semitransparente para os botões */
+    color: white; /* Define a cor do texto dos botões como branca */
+    border: none; /* Remove a borda padrão dos botões */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px ao redor do texto dos botões */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre os botões, indicando que são clicáveis */
+    z-index: 100; /* Garante que os botões fiquem acima de outros elementos do carrossel */
+}
+
+.prev {
+    left: 10px; /* Posiciona o botão "anterior" 10px à esquerda do contêiner do carrossel */
+}
+
+.next {
+    right: 10px; /* Posiciona o botão "próximo" 10px à direita do contêiner do carrossel */
+}
+
